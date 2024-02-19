@@ -27,46 +27,31 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
+      title: 'Point Fibre Optique', 
+      description: `Your go-to platform for comparing and finding the best fiber optic Internet deals available in France.`,
+      alter: 'Point Fibre Optique Project',
       image: `${Portfolio}`,
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
+      title: 'Performances Business', 
+      description: `A comprehensive online platform dedicated to enhancing business efficiency and productivity through insightful articles, tools, and resources.`,
+      alter: 'Performances Business Project',
       image: `${Veritru}`,
     },
     { 
       id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
+      title: 'Locations Luberon', 
+      description: `Offers a diverse selection of vacation rentals in the beautiful Luberon region, providing visitors with an authentic and immersive experience in the heart of Provence.`,
+      alter: 'Locations Luberon Project',
       image: `${Lofo}`,
     },
     { 
       id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
+      title: 'Imagine Toi', 
+      description: `A website dedicated to providing personalized and immersive virtual reality experiences for educational and recreational purposes.`,
+      alter: 'Imagine Toi Project',
       image: `${Startup}`,
-    },
-    { 
-      id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
     },
   ]);
 
