@@ -43,6 +43,12 @@
   font-size: 1rem;
   width: 80%;
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1024px) {
   .project {
     margin-left: 3rem;
@@ -64,4 +70,16 @@
   .__content_wrapper {
     width: 70%;
   }
+}
+
+.project:hover{
+  background-color: #884ac2;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  animation: zoom-in-zoom-out 1s ease;
+  transform: scale(1.05, 1.05);
+  transition: all 0.5s ease;
+}
+
+.project:not(:hover){
+  transition: all 0.5s ease;
 }

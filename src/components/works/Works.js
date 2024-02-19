@@ -24,33 +24,37 @@ const useStyles = makeStyles((theme) => ({
 export const Works = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([
-    { 
+    {
       id: 1,
-      title: 'Point Fibre Optique', 
+      title: 'Point Fibre Optique',
       description: `Your go-to platform for comparing and finding the best fiber optic Internet deals available in France.`,
       alter: 'Point Fibre Optique Project',
       image: `${Pfo}`,
+      url: `https://pointfibreoptique.com`,
     },
-    { 
+    {
       id: 2,
-      title: 'Performances Business', 
+      title: 'Performances Business',
       description: `A comprehensive online platform dedicated to enhancing business efficiency and productivity through insightful articles, tools, and resources.`,
       alter: 'Performances Business Project',
       image: `${Pb}`,
+      url: `https://performancesbusiness.com`,
     },
-    { 
+    {
       id: 3,
-      title: 'Locations Luberon', 
+      title: 'Locations Luberon',
       description: `Offers a diverse selection of vacation rentals in the beautiful Luberon region, providing visitors with an authentic and immersive experience in the heart of Provence.`,
       alter: 'Locations Luberon Project',
       image: `${Ll}`,
+      url: `https://locations-luberon.fr`,
     },
-    { 
+    {
       id: 4,
-      title: 'Imagine Toi', 
+      title: 'Imagine Toi',
       description: `A website dedicated to providing personalized and immersive virtual reality experiences for educational and recreational purposes.`,
       alter: 'Imagine Toi Project',
       image: `${It}`,
+      url: `https://imaginetoi.be`,
     },
   ]);
 
@@ -58,19 +62,19 @@ export const Works = () => {
     <section id="works">
       <Container component="main" className={classes.main} maxWidth="md">
         {projects.map((project) => (
-          <div className="project" key={ project.id }>
+          <a className="project" key={project.id} href={project.url} target="_blank">
             <div className="__img_wrapper">
-              <img src={project.image } alt={ project.alter }/>
+              <img src={project.image} alt={project.alter} />
             </div>
             <div className="__content_wrapper">
               <h3 className="title">
-                <TextDecrypt text={ project.id + '. ' + project.title } />
+                <TextDecrypt text={project.id + '. ' + project.title} />
               </h3>
               <p className="description">
-                { project.description }
+                {project.description}
               </p>
             </div>
-          </div>
+          </a>
         ))}
       </Container>
     </section>
