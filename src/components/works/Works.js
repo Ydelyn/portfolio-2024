@@ -60,7 +60,7 @@ export const Works = () => {
         {projects.map((project) => (
           <div className="project" key={ project.id }>
             <div className="__img_wrapper">
-              <img src={ project.image } alt={ project.alter }/>
+              <img src={project.image } alt={ project.alter }/>
             </div>
             <div className="__content_wrapper">
               <h3 className="title">
