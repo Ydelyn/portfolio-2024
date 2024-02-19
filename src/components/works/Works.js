@@ -8,11 +8,10 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
+import Pfo from '../../assets/recentprojects/pfo.png';
+import Pb from '../../assets/recentprojects/pb.png';
+import Ll from '../../assets/recentprojects/ll.png';
+import It from '../../assets/recentprojects/it.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -30,28 +29,28 @@ export const Works = () => {
       title: 'Point Fibre Optique', 
       description: `Your go-to platform for comparing and finding the best fiber optic Internet deals available in France.`,
       alter: 'Point Fibre Optique Project',
-      image: `${Portfolio}`,
+      image: `${Pfo}`,
     },
     { 
       id: 2,
       title: 'Performances Business', 
       description: `A comprehensive online platform dedicated to enhancing business efficiency and productivity through insightful articles, tools, and resources.`,
       alter: 'Performances Business Project',
-      image: `${Veritru}`,
+      image: `${Pb}`,
     },
     { 
       id: 3,
       title: 'Locations Luberon', 
       description: `Offers a diverse selection of vacation rentals in the beautiful Luberon region, providing visitors with an authentic and immersive experience in the heart of Provence.`,
       alter: 'Locations Luberon Project',
-      image: `${Lofo}`,
+      image: `${Ll}`,
     },
     { 
       id: 4,
       title: 'Imagine Toi', 
       description: `A website dedicated to providing personalized and immersive virtual reality experiences for educational and recreational purposes.`,
       alter: 'Imagine Toi Project',
-      image: `${Startup}`,
+      image: `${It}`,
     },
   ]);
 
