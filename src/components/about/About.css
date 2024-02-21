@@ -7,19 +7,20 @@
   align-items: center;
 }
 .heading {
-  width: 30%;
+  width: 20%;
   font-size: 1.15rem;
 }
+
 ._img {
   margin: 10em;
-  width: 35em;
+  width: 30em;
   height: 20em;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.51);
+  /* border: 1px solid rgba(255, 255, 255, 0.51); */
 }
 ._content_wrapper {
-  width: 40%;
+  width: 70%;
 }
 .contact-btn {
   margin-right: 20px;

@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "Lorris Ydelyn Colini",
-        "label": "Fullstack Developer",
+        "label": "Full-Stack Developer",
         "email": "lorris.colini@gmail.com",
         "phone": "+33621245455",
         "picture": "mt.png",
         "x_title": "Hello, I'm",
-        "job1": "Fullstack",
+        "job1": "Full Stack",
         "job2": "Developer",
         "description": "Hello! I'm Lorris! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
         "summary": "based in Paris, France.",
