@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     width: '2.5rem',
     display: 'block',
     marginBottom: theme.spacing(2),
+
   },
   icon: {
     fontSize: '1.25rem',

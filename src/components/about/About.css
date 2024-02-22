@@ -34,7 +34,7 @@
 .contact-btn:hover {
   margin-right: 20px;
   text-decoration: none;
-  background-color: #884ac2;
+  background-color: #44a1a0;
   animation: zoom-in-zoom-out 1s ease;
   transform: scale(1.05, 1.05);
   transition: all 0.5s ease;
