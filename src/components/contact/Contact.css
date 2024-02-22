@@ -4,7 +4,6 @@
   margin-left: 20rem;
   margin-right: 10rem;
 }
-
 ._form_wrapper {
   display: flex;
   border-radius: 16px;
@@ -14,7 +13,6 @@
   height: 28em;
   padding: 2em;
 }
-
 .submit-btn {
   margin-right: 20px;
   text-decoration: none;
@@ -27,14 +25,23 @@
   margin-right: 20px;
   text-decoration: none;
   background-color: #884ac2;
+  animation: zoom-in-zoom-out 1s ease;
+  transform: scale(1.05, 1.05);
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
 }
-
+.submit-btn:not(:hover){
+  transition: all 0.5s ease;
+}
 .contact_msg {
   font-size: 4rem;
   margin: 5rem;
 }
-
 @media (max-width: 1024px) {
+  .contact{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   ._form_wrapper {
     width: 300px;
     height: auto;
@@ -46,8 +53,6 @@
 @media (max-width: 768px) {
   .contact {
     width: 70%;
-    margin-left: 5rem;
-    margin-right: 4rem;
     margin-bottom: 7em;
     flex-direction: column;
   }

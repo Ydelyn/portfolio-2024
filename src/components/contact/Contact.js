@@ -36,7 +36,7 @@ export const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_8bezxog', 'template_jmsk313', form.current, 'knwNTK4YU4K30HYMd')
+    emailjs.sendForm('service_yk2p49j', 'template_h7675fo', form.current, 'H3Fch4utunMSMloOb')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -68,6 +68,7 @@ export const Contact = () => {
                   variant="filled"
                   name="name"
                   className={classes.formfield}
+                  required
                 />
                 <TextField
                   id="outlined-password-input"
@@ -77,6 +78,7 @@ export const Contact = () => {
                   variant="filled"
                   name="email"
                   className={classes.formfield}
+                  required
                 />
                 <TextField
                   id="outlined-password-input"
@@ -88,6 +90,7 @@ export const Contact = () => {
                   variant="filled"
                   name="message"
                   className={classes.formfield}
+                  required
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
