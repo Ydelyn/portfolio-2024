@@ -7,7 +7,7 @@ import { FirstName, LastName } from "../../utils/getName";
 
 import './About.css';
 
-import profile from '../../assets/profile.jpg';
+import profile from '../../assets/profile.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -43,9 +43,9 @@ export const About = () => {
             <p className="aboutme">
               {aboutme}
             </p>
-            <p className="aboutme2">
+            {/* <p className="aboutme2">
               {aboutme2}
-            </p>
+            </p> */}
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
               <Typography component='span'> Send me a message.</Typography>
