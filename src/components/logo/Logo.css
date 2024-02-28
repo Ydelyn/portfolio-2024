@@ -1,0 +1,19 @@
+  /*  Rollover image styles  */
+  .logo {
+    position: relative;
+    width: 360px; /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+  }
+  .logo-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .logo:hover img.logo-hover {
+    opacity: 1;
+  }

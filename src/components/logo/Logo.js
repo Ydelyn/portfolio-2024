@@ -1,25 +1,22 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React, {useContext} from "react";
 
-import logo from "../../assets/apple-touch-icon.png";
-// import logoHover from "../../assets/apple-touch-icon-hover.png";
+import { ThemeContext } from "../theme/ThemeProvider";
 
-// const useStyles = makeStyles((theme) => ({
-//   hover: {
-//     backgroundImage: "url(../../assets/apple-touch-icon.png)",
-//     "&:hover": {
-//         backgroundImage: "url(../../assets/apple-touch-icon-hover.png)",
-//     },
-//     transition: "all 0.5s ease",
-//     width: "50px",
-//     height:"50px",
-//   },
-// }));
+import logoDark from "../../assets/apple-touch-icon-dark.png";
+import logoLight from "../../assets/apple-touch-icon-light.png";
+import logoHover from "../../assets/apple-touch-icon-hover.png";
+
+import "./Logo.css";
 
 export const Logo = () => {
     // const classes = useStyles();
+    const { theme } = useContext(ThemeContext);
+    const usedLogo = theme === "light" ? logoDark : logoLight;
 
     return (
-      <img src={logo} width="50px"/>
+      <div className="logo">
+        <img className="logo-main" src={usedLogo} width="50px"/>
+        <img className="logo-hover" src={logoHover} width="50px"/>
+      </div>
     );
 };
