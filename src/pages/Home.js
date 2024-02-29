@@ -12,6 +12,8 @@ import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
+import {LanguageSelector} from "../components/i18n/LanguageSelector";
+
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -31,6 +33,7 @@ export const Home = () => {
         <LogoLink />
         <Content />
         <ThemeToggle />
+        <LanguageSelector />
         <Hidden smDown>
           <SocialIcons />
         </Hidden>
