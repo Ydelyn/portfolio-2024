@@ -1,5 +1,11 @@
 {
     "about": {
         "greetings": "Hello there!"
+    },
+    "sideNavbar": {
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact"
     }
 }

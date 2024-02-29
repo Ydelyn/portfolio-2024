@@ -1,8 +1,6 @@
-import React, { useContext, useState } from "react";
-import { ThemeContext } from "./LanguageProvider";
+import React, { useState } from "react";
 import { Tooltip, IconButton, Zoom } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import LanguageIcon from '@material-ui/icons/Language';
 
 import { useTranslation } from "react-i18next";
 
@@ -23,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 export const LanguageSelector = () => {
 
     const [language, setLanguage] = useState("en");
-    const [t, i18n] = useTranslation('common');
+    const {i18n} = useTranslation('common');
     
     const toggleLanguage = () => {
         if (language === "fr") {
@@ -49,11 +47,10 @@ export const LanguageSelector = () => {
           className={classes.iconButton}
         >
             {language === "en" ? (
-              <p>EN</p>
+              <p className={classes.icon}>FR</p>
           ) : (
-              <p>FR</p>
+              <p className={classes.icon}>EN</p>
           )}
-        <LanguageIcon className={classes.icon}/>
         </IconButton>
       </Tooltip>
     );
