@@ -7,6 +7,9 @@ import {
   ResumeIcon
 } from '../content/ResumeButton';
 
+import {useTranslation} from "react-i18next";
+import { useTransition } from 'react';
+
 const useStyles = makeStyles((theme) => ({
   footerText: {
     position: 'fixed',
@@ -25,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Resume = () => {
   const classes = useStyles();
+  const {t} = useTranslation("common");
 
   return (
     <Link
@@ -37,7 +41,7 @@ export const Resume = () => {
     >
       <ResumeIcon />
       <Typography component='span'>
-        <TextDecrypt text={' Resume'} />
+        <TextDecrypt text={t('resume')} />
       </Typography>
     </Link>
   );

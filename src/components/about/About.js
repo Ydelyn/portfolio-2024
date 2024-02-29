@@ -24,8 +24,8 @@ export const About = () => {
   const {t} = useTranslation("common");
   const classes = useStyles();
   const greetings = t('about.greetings');
-  const aboutme = `Hello I'm ${FirstName} ${LastName}, a junior developer specializing in React, React Native, and PHP. Passionate about creating high-performance web and mobile applications, I combine front-end expertise and back-end skills to develop comprehensive solutions.`;
-  const aboutme2 =  `My curiosity for technology and commitment to continuous learning drive me to explore new techniques and tackle challenges in the development field. I am always looking to collaborate on innovative projects and contribute to a dynamic team, while developing my technical expertise and sharing my passion for coding.`;
+  const aboutme = t('about.aboutme');
+  const aboutme2 =  t('about.aboutme2');
 
   return (
     <section id="about">
@@ -52,7 +52,7 @@ export const About = () => {
             </p> */}
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
-              <Typography component='span'> Send me a message.</Typography>
+              <Typography component='span'> {t('about.contact')}</Typography>
             </a>
           </div>
         </div>

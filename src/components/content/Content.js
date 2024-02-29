@@ -5,6 +5,8 @@ import { TextDecrypt } from "./TextDecrypt";
 import Resume from "../../settings/resume.json";
 import { FirstName, Pseudo, LastName } from "../../utils/getName";
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   main: {
     maxWidth: '100vw',
@@ -26,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Content = () => {
   const classes = useStyles();
+  const {t} = useTranslation("common");
 
   return (
     <Container component="main" className={classes.main} maxWidth="md">
@@ -34,8 +37,8 @@ export const Content = () => {
             <TextDecrypt text={`${FirstName} (${Pseudo}) ${LastName}`} />
         </Typography>
         <Typography variant="h1" component="h1" className={classes.jobs}>
-            <TextDecrypt text={`${Resume.basics.job1}`} />
-            <TextDecrypt text={`${Resume.basics.job2}`} />
+            <TextDecrypt text={t('content.job1')} />
+            <TextDecrypt text={t('content.job2')} />
         </Typography>
       </div>
     </Container>

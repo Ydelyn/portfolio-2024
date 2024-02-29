@@ -1,11 +1,19 @@
 {
     "about": {
-        "greetings": "Hello there!"
+        "greetings": "Hello there!",
+        "aboutme": "Hello I'm Lorris Colini, a junior developer specializing in React, React Native, and PHP. Passionate about creating high-performance web and mobile applications, I combine front-end expertise and back-end skills to develop comprehensive solutions.",
+        "aboutme2": "My curiosity for technology and commitment to continuous learning drive me to explore new techniques and tackle challenges in the development field. I am always looking to collaborate on innovative projects and contribute to a dynamic team, while developing my technical expertise and sharing my passion for coding.",
+        "contact": "Send me a message."
     },
     "sideNavbar": {
         "home": "Home",
         "projects": "Projects",
         "about": "About",
         "contact": "Contact"
+    },
+    "resume": "Resume",
+    "content": {
+        "job1": "Full Stack",
+        "job2": "Developer"
     }
 }
