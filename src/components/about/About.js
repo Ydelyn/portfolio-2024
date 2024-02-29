@@ -9,6 +9,9 @@ import './About.css';
 
 import profile from '../../assets/profile.png';
 
+import {useTranslation} from "react-i18next";
+
+
 const useStyles = makeStyles((theme) => ({
   main: {
     maxWidth: '100vw',
@@ -18,8 +21,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const About = () => {
+  const {t} = useTranslation("common");
   const classes = useStyles();
-  const greetings = "Hello there!";
+  const greetings = t('about.greetings');
   const aboutme = `Hello I'm ${FirstName} ${LastName}, a junior developer specializing in React, React Native, and PHP. Passionate about creating high-performance web and mobile applications, I combine front-end expertise and back-end skills to develop comprehensive solutions.`;
   const aboutme2 =  `My curiosity for technology and commitment to continuous learning drive me to explore new techniques and tackle challenges in the development field. I am always looking to collaborate on innovative projects and contribute to a dynamic team, while developing my technical expertise and sharing my passion for coding.`;
 
