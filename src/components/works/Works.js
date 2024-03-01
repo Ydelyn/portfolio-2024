@@ -29,7 +29,7 @@ export const Works = () => {
     {
       id: 1,
       title: 'Point Fibre Optique',
-      description: t('works.pfo'),
+      description: 'pfo',
       alter: 'Point Fibre Optique Project',
       image: `${Pfo}`,
       url: `https://pointfibreoptique.com`,
@@ -37,7 +37,7 @@ export const Works = () => {
     {
       id: 2,
       title: 'Performances Business',
-      description: t('works.pb'),
+      description: 'pb',
       alter: 'Performances Business Project',
       image: `${Pb}`,
       url: `https://performancesbusiness.com`,
@@ -45,7 +45,7 @@ export const Works = () => {
     {
       id: 3,
       title: 'Locations Luberon',
-      description: t('works.ll'),
+      description: 'll',
       alter: 'Locations Luberon Project',
       image: `${Ll}`,
       url: `https://locations-luberon.fr`,
@@ -53,7 +53,7 @@ export const Works = () => {
     {
       id: 4,
       title: 'Imagine Toi',
-      description: t('works.it'),
+      description: 'it',
       alter: 'Imagine Toi Project',
       image: `${It}`,
       url: `https://imaginetoi.be`,
@@ -73,7 +73,7 @@ export const Works = () => {
                 <TextDecrypt text={project.id + '. ' + project.title} />
               </h3>
               <p className="description">
-                {project.description}
+                {t('works.'+project.description)}
               </p>
             </div>
           </a>
