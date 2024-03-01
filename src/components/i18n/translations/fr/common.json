@@ -15,5 +15,11 @@
     "content": {
         "job1": "Développeur",
         "job2": "Full Stack"
+    },
+    "works": {
+        "pfo": "Votre plateforme de référence pour comparer et trouver les meilleures offres Internet par fibre optique disponibles en France.",
+        "pb": "Une plateforme en ligne complète dédiée à améliorer l'efficacité et la productivité des entreprises grâce à des articles, des outils et des ressources informatives.",
+        "ll": "Propose une sélection variée de locations de vacances dans la magnifique région du Luberon, offrant aux visiteurs une expérience authentique et immersive au cœur de la Provence.",
+        "it": "Un site web dédié à fournir des expériences de réalité virtuelle personnalisées et immersives à des fins éducatives et récréatives."
     }
 }

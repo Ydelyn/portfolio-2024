@@ -7,11 +7,12 @@ import { TextDecrypt } from "../content/TextDecrypt";
 
 import './Works.css';
 
-// Import ../../assets/recentprojects/
 import Pfo from '../../assets/recentprojects/pfo.png';
 import Pb from '../../assets/recentprojects/pb.png';
 import Ll from '../../assets/recentprojects/ll.png';
 import It from '../../assets/recentprojects/it.png';
+
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -23,11 +24,12 @@ const useStyles = makeStyles((theme) => ({
 
 export const Works = () => {
   const classes = useStyles();
-  const [projects, setProjects] = useState([
+  const {t} = useTranslation("common");
+  const [projects, setProjects] = useState([ //WIP: changer le usestate pour permettre la modif du translate
     {
       id: 1,
       title: 'Point Fibre Optique',
-      description: `Your go-to platform for comparing and finding the best fiber optic Internet deals available in France.`,
+      description: t('works.pfo'),
       alter: 'Point Fibre Optique Project',
       image: `${Pfo}`,
       url: `https://pointfibreoptique.com`,
@@ -35,7 +37,7 @@ export const Works = () => {
     {
       id: 2,
       title: 'Performances Business',
-      description: `A comprehensive online platform dedicated to enhancing business efficiency and productivity through insightful articles, tools, and resources.`,
+      description: t('works.pb'),
       alter: 'Performances Business Project',
       image: `${Pb}`,
       url: `https://performancesbusiness.com`,
@@ -43,7 +45,7 @@ export const Works = () => {
     {
       id: 3,
       title: 'Locations Luberon',
-      description: `Offers a diverse selection of vacation rentals in the beautiful Luberon region, providing visitors with an authentic and immersive experience in the heart of Provence.`,
+      description: t('works.ll'),
       alter: 'Locations Luberon Project',
       image: `${Ll}`,
       url: `https://locations-luberon.fr`,
@@ -51,7 +53,7 @@ export const Works = () => {
     {
       id: 4,
       title: 'Imagine Toi',
-      description: `A website dedicated to providing personalized and immersive virtual reality experiences for educational and recreational purposes.`,
+      description: t('works.it'),
       alter: 'Imagine Toi Project',
       image: `${It}`,
       url: `https://imaginetoi.be`,
