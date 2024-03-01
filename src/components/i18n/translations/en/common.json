@@ -21,5 +21,18 @@
         "pb": "A comprehensive online platform dedicated to enhancing business efficiency and productivity through insightful articles, tools, and resources.",
         "ll": "Offers a diverse selection of vacation rentals in the beautiful Luberon region, providing visitors with an authentic and immersive experience in the heart of Provence.",
         "it": "A website dedicated to providing personalized and immersive virtual reality experiences for educational and recreational purposes."
+    },
+    "contact": {
+        "greetings": "Say hello.",
+        "title": "You have sent a message!",
+        "label_name": "Name",
+        "label_email": "Email",
+        "submit": "Send message"
+    },
+    "language_selector": {
+        "aria_label": "Changer la langue"
+    },
+    "theme_toggle": {
+        "aria_label": "Toggle theme"
     }
 }

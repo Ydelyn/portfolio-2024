@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
 export const LanguageSelector = () => {
 
     const [language, setLanguage] = useState("en");
-    const {i18n} = useTranslation('common');
+    const {i18n, t} = useTranslation('common');
     
     const toggleLanguage = () => {
         if (language === "fr") {
@@ -40,14 +40,14 @@ export const LanguageSelector = () => {
 
     return (
       <Tooltip
-        title={"Change language"}
+        title={t('language_selector.aria_label')}
         placement="right"
         TransitionComponent={Zoom}
       >
         <IconButton
           color="inherit"
           onClick={toggleLanguage}
-          aria-label={"Change language"}
+          aria-label={t('language_selector.aria_label')}
           className={classes.iconButton}
         >
             {language === "en" ? (

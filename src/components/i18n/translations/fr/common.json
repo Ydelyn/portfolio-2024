@@ -21,5 +21,18 @@
         "pb": "Une plateforme en ligne complète dédiée à améliorer l'efficacité et la productivité des entreprises grâce à des articles, des outils et des ressources informatives.",
         "ll": "Propose une sélection variée de locations de vacances dans la magnifique région du Luberon, offrant aux visiteurs une expérience authentique et immersive au cœur de la Provence.",
         "it": "Un site web dédié à fournir des expériences de réalité virtuelle personnalisées et immersives à des fins éducatives et récréatives."
+    },
+    "contact": {
+        "greetings": "Un petit mot ?",
+        "title": "Vous avez envoyé un message !",
+        "label_name": "Nom",
+        "label_email": "Mail",
+        "submit": "Envoyer le message"
+    },
+    "language_selector": {
+        "aria_label": "Change language"
+    },
+    "theme_toggle": {
+        "aria_label": "Changer de thème"
     }
 }

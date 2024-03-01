@@ -10,6 +10,8 @@ import emailjs from '@emailjs/browser';
 
 import './Contact.css';
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   main: {
     maxWidth: '100vw',
@@ -29,14 +31,19 @@ const useStyles = makeStyles((theme) => ({
 
 export const Contact = () => {
   const classes = useStyles();
+  const {i18n, t} = useTranslation("common");
+  const currentLanguage = i18n.language;
+
   const greetings = "Say hello.";
 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    const template = currentLanguage === "en" ? 'template_h7675fo' :  'template_xcmkpsg';
 
-    emailjs.sendForm('service_yk2p49j', 'template_h7675fo', form.current, 'H3Fch4utunMSMloOb')
+    emailjs.sendForm('service_yk2p49j', template, form.current, 'H3Fch4utunMSMloOb')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -45,7 +52,7 @@ export const Contact = () => {
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'You have sent an email!',
+      title: t('contact.title'),
       showConfirmButton: false,
       timer: 1500
     })
@@ -62,7 +69,7 @@ export const Contact = () => {
               <form ref={form} onSubmit={sendEmail} className={classes.form}>
                 <TextField
                   id="outlined-name-input"
-                  label="Name"
+                  label={t('contact.label_name')}
                   type="text"
                   size="small"
                   variant="filled"
@@ -72,7 +79,7 @@ export const Contact = () => {
                 />
                 <TextField
                   id="outlined-password-input"
-                  label="Email"
+                  label={t('contact.label_email')}
                   type="email"
                   size="small"
                   variant="filled"
@@ -94,12 +101,12 @@ export const Contact = () => {
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
-                  <Typography component='span'> Send Message</Typography>
+                  <Typography component='span'> {t('contact.submit')}</Typography>
                 </button>
               </form>
             </div>
             <h2 className="contact_msg">
-              <TextDecrypt text={greetings}/>
+              <TextDecrypt text={t('contact.greetings')}/>
             </h2>
           </div>
         </Container>

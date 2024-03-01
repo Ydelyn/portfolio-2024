@@ -4,6 +4,8 @@ import { Tooltip, IconButton, Zoom } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Brightness4, Brightness7 } from "@material-ui/icons";
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   iconButton: {
     position: "fixed",
@@ -20,17 +22,18 @@ const useStyles = makeStyles((theme) => ({
 export const ThemeToggle = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
     const classes = useStyles();
+    const {t} = useTranslation('common');
 
     return (
       <Tooltip
-        title={"Toggle theme"}
+        title={t('theme_toggle.aria_label')}
         placement="right"
         TransitionComponent={Zoom}
       >
         <IconButton
           color="inherit"
           onClick={toggleTheme}
-          aria-label={"Toggle theme"}
+          aria-label={t('theme_toggle.aria_label')}
           className={classes.iconButton}
         >
           {theme === "light" ? (
