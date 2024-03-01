@@ -65,4 +65,7 @@
   .contact {
     flex-direction: column;
   }
+  .contact_msg{
+    display: none;
+  }
 }
