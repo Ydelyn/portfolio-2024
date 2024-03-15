@@ -1,5 +1,5 @@
 .project {
-  width: 80%;
+  width: 90%;
   max-width: 60em;
   margin: 2em auto;
   padding: 1em;
@@ -55,10 +55,6 @@ a{
 }
 
 @media (max-width: 1024px) {
-  .project {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
   .__content_wrapper {
     width: 50%;
   }
@@ -68,6 +64,7 @@ a{
 }
 @media (max-width: 768px) {
   .project {
+    width: 80%;
     flex-direction: column;
   }
   .__img_wrapper {

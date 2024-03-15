@@ -14,9 +14,7 @@ import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    maxWidth: '100vw',
-    marginTop: '3em',
-    marginBottom: "3em",
+    margin: "3em auto",
   },
   form: {
     width: '100%',
@@ -105,9 +103,11 @@ export const Contact = () => {
                 </button>
               </form>
             </div>
-            <h2 className="contact_msg">
-              <TextDecrypt text={t('contact.greetings')}/>
-            </h2>
+            <div className="contact_text">
+              <h2 className="contact_msg">
+                <TextDecrypt text={t('contact.greetings')}/>
+              </h2>
+            </div>
           </div>
         </Container>
       </section>

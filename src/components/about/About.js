@@ -14,9 +14,8 @@ import {useTranslation} from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    maxWidth: '100vw',
+    margin: "auto",
     marginTop: '3em',
-    marginBottom: "auto",
   },
 }));
 

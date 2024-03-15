@@ -1,15 +1,15 @@
 .contact {
   display: flex;
-  width: 80%;
-  margin-left: 20rem;
-  margin-right: 10rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5em;
 }
 ._form_wrapper {
   display: flex;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.51);
-  width: 28em;
+  width: 50%;
   height: 28em;
   padding: 2em;
 }
@@ -33,14 +33,16 @@
 .submit-btn:not(:hover){
   transition: all 0.5s ease;
 }
+.contact_text{
+  width: 50%;
+}
 .contact_msg {
   font-size: 4rem;
   margin: 5rem;
 }
 @media (max-width: 1024px) {
   .contact{
-    margin-left: 5rem;
-    margin-right: 5rem;
+    width: 80%;
   }
   ._form_wrapper {
     width: 300px;
@@ -52,7 +54,7 @@
 }
 @media (max-width: 768px) {
   .contact {
-    width: 70%;
+    width: 80%;
     margin-bottom: 7em;
     flex-direction: column;
   }

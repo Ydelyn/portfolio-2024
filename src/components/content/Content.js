@@ -9,15 +9,8 @@ import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    maxWidth: '100vw',
-    marginTop: "auto",
-    marginBottom: "auto",
-  },
-  heading: {
-    marginLeft: theme.spacing(50),
-    "@media (max-width: 768px)": {
-      marginLeft: theme.spacing(10),
-    },
+    margin: "auto",
+    textAlign: "center",
   },
   jobs: {
     "@media (max-width: 768px)": {

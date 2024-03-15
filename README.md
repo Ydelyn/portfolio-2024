@@ -1,6 +1,6 @@
 # <p align="center">TODO List :</p>
 
-- [ ]  Adapter le responsive : 
+- [X]  Adapter le responsive : 
 - [ ] Social Links (Réécrire les hover sur un format mobile)
 - [ ] Social Links (Rendre le + absolute pour toujours l'avoir à dispo)
  ----------
