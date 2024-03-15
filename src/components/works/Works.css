@@ -35,6 +35,11 @@
   flex-direction: column;
 
 }
+.works_title{
+  margin: auto;
+  text-align: center;
+  font-size: 4rem;
+}
 .title {
   font-size: 1.5rem;
   margin: 0;

@@ -62,9 +62,12 @@ export const Works = () => {
 
   return (
     <section id="works">
+      <h2 className="works_title">
+        <TextDecrypt text={t('works.title')}/>
+      </h2>
       <Container component="main" className={classes.main} maxWidth="md">
         {projects.map((project) => (
-          <a className="project" key={project.id} href={project.url} target="_blank">
+          <a className="project" key={project.id} href={project.url} target="_blank" rel="noreferrer">
             <div className="__img_wrapper">
               <img src={project.image} alt={project.alter} />
             </div>

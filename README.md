@@ -1,13 +1,13 @@
 # <p align="center">TODO List :</p>
 
 - [ ]  Adapter le responsive : 
-- [ ] Social Links (Réécrire les hover sur un format étroit)
+- [ ] Social Links (Réécrire les hover sur un format mobile)
 - [ ] Social Links (Rendre le + absolute pour toujours l'avoir à dispo)
  ----------
 - [ ] Buttons (Ajouter un blur / background sous les boutons)
 ----------
 - [ ] Works (Refaire le visuel des div)
-- [ ] Works (Ajouter le titre : My Projects)
+- [X] Works (Ajouter le titre : My Projects)
 ----------
 - [ ] Contact (Revoir le responsive)
 ----------
