@@ -9,10 +9,10 @@
 - [ ] Works (Refaire le visuel des div)
 - [X] Works (Ajouter le titre : My Projects)
 ----------
-- [ ] Contact (Revoir le responsive)
+- [X] Contact (Revoir le responsive)
 ----------
-- [ ] Picture (Revoir le cadre responsive)
+- [X] Picture (Revoir le cadre responsive)
 ----------
-- [ ] Resume Button (Revoir le visuel)
+- [X] Resume Button (Revoir le visuel)
  
 ![](https://redac.trashtalk.co/wp-content/uploads/2017/08/Pouce-en-lair.png)

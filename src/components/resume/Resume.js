@@ -1,29 +1,29 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Link } from '@material-ui/core';
+import { Typography, Link, IconButton } from '@material-ui/core';
 import { TextDecrypt } from '../content/TextDecrypt';
 import ResumePDF from './../../assets/Lorris_Colini_Resume.pdf';
-import {
-  ResumeIcon
-} from '../content/ResumeButton';
-
+import { FaRegFilePdf } from "react-icons/fa6";
 import {useTranslation} from "react-i18next";
-import { useTransition } from 'react';
 
 const useStyles = makeStyles((theme) => ({
   footerText: {
     position: 'fixed',
     bottom: theme.spacing(6),
     left: theme.spacing(6),
-    '&:hover': {
-      color: theme.palette.primary.main,
-    },
     transition: 'all 0.5s ease',
     display: 'flex',
     alignItems: 'center',
     flexWrap: 'wrap',
   },
-  
+  iconButton: {
+    borderRadius: "1.25em",
+    padding: "2px 5px",   
+  },
+  icon: {
+    marginRight: '10px',
+    fontSize: "1.25rem",
+  },
 }));
 
 export const Resume = () => {
@@ -39,10 +39,15 @@ export const Resume = () => {
       rel='noopener noreferrer'
       className={classes.footerText}
     >
-      <ResumeIcon />
+    <IconButton
+    color="inherit"
+    className={classes.iconButton}
+  >    
+      <FaRegFilePdf className={classes.icon}/>
       <Typography component='span'>
         <TextDecrypt text={t('resume')} />
       </Typography>
+    </IconButton>
     </Link>
   );
 };
