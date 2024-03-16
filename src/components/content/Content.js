@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
-import Resume from "../../settings/resume.json";
+import { FaAnglesDown } from "react-icons/fa6";
 import { FirstName, Pseudo, LastName } from "../../utils/getName";
 
 import { useTranslation } from "react-i18next";
@@ -15,6 +15,12 @@ const useStyles = makeStyles((theme) => ({
   jobs: {
     "@media (max-width: 768px)": {
       fontSize: '3rem',
+    },
+  },
+  fa: {
+    fontSize: '3rem',
+    "@media (max-width: 768px)": {
+      fontSize: '2rem',
     },
   },
 }));
@@ -33,6 +39,7 @@ export const Content = () => {
             <TextDecrypt text={t('content.job1')} />
             <TextDecrypt text={t('content.job2')} />
         </Typography>
+        <FaAnglesDown className={classes.fa} />
       </div>
     </Container>
   );
