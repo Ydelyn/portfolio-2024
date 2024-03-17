@@ -13,5 +13,7 @@
 - [X] Picture (Revoir le cadre responsive)
 ----------
 - [X] Resume Button (Revoir le visuel)
+----------
+- [ ] Navbar (Retravailler le navbar)
  
 ![](https://redac.trashtalk.co/wp-content/uploads/2017/08/Pouce-en-lair.png)
