@@ -15,8 +15,8 @@ export const Logo = () => {
 
     return (
       <div className="logo">
-        <img className="logo-main" src={usedLogo} width="50px"/>
-        <img className="logo-hover" src={logoHover} width="50px"/>
+        <img className="logo-main" src={usedLogo} width="50px" alt=""/>
+        <img className="logo-hover" src={logoHover} width="50px" alt=""/>
       </div>
     );
 };

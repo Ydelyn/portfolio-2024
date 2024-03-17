@@ -1,7 +1,7 @@
   /*  Rollover image styles  */
   .logo {
     position: relative;
-    width: 360px; /* can be omitted for a regular non-lazy image */
+    width: 360px;
     max-width: 100%;
   }
   .logo-hover {
