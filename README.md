@@ -3,7 +3,7 @@
 - [X]  Adapter le responsive : 
 - [X] Social Links (Rendre le + fixed pour toujours l'avoir à dispo)
  ----------
-- [ ] Buttons (Ajouter un blur / background sous les boutons)
+- [X] Buttons (Ajouter un blur / background sous les boutons)
 ----------
 - [ ] Works (Refaire le visuel des div)
 - [X] Works (Ajouter le titre : My Projects)
