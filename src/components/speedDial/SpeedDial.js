@@ -9,8 +9,15 @@ const useStyles = makeStyles((theme) => ({
       top: theme.spacing(6),
       right: theme.spacing(6),
     },
+    icons: {
+      backdropFilter: 'blur(10px)',
+    },
     iconColor: {
       color: theme.palette.foreground.default,
+      // TODO:
+      // backdropFilter: 'blur(10px)',
+      // borderRadius: "1.25em",
+      // padding: "1.25em",
     },
 }));
 
@@ -38,6 +45,7 @@ export const SpeedDials = () => {
         rel="noopener noreferrer"
         underline="none"
         color="inherit"
+        className={classes.icons}
       />
     ));
 

@@ -8,14 +8,12 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: theme.spacing(6),
     right: theme.spacing(6),
-    zIndex: 1000,
   },
   iconButton: {
     height: '2.5rem',
     width: '2.5rem',
     display: 'block',
     marginBottom: theme.spacing(2),
-
   },
   icon: {
     fontSize: '1.25rem',

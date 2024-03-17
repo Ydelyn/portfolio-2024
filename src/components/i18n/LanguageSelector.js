@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     height: "2.5rem",
     width: "2.5rem",
     zIndex: 1000,
+    backdropFilter: 'blur(10px)',
     "@media (max-width: 768px)" : {
         bottom: theme.spacing(6),
         right: theme.spacing(13),    

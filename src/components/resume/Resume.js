@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     flexWrap: 'wrap',
     zIndex: 1000,
+    backdropFilter: 'blur(10px)',
+    borderRadius: "1.25em",
   },
   iconButton: {
     borderRadius: "1.25em",
