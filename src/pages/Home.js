@@ -9,6 +9,7 @@ import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
 import { SideNavbar } from '../components/nav/SideNavbar';
+import { NavbarDrawer } from '../components/nav/NavbarDrawer';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
@@ -31,6 +32,7 @@ export const Home = () => {
       <div className={classes.root} id="home">
         <DisplacementSphere />
         <LogoLink />
+        <NavbarDrawer />
         <Content />
         <ThemeToggle />
         <LanguageSelector />
