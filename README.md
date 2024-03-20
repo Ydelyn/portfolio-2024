@@ -14,6 +14,7 @@
 ----------
 - [X] Resume Button (Revoir le visuel)
 ----------
-- [ ] Navbar (Retravailler le navbar)
+- [ ] Navbar (Retravailler la navbar)
+- [ ] Glassmorphism général
  
 ![](https://redac.trashtalk.co/wp-content/uploads/2017/08/Pouce-en-lair.png)
