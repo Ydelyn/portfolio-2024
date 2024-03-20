@@ -9,6 +9,7 @@
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.51);
+  backdrop-filter: blur(20px);
 }
 .project-reverse {
   width: 80%;
@@ -79,10 +80,7 @@ a{
 }
 
 .project:hover{
-  background-color: #884ac2;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-  animation: zoom-in-zoom-out 1s ease;
-  transform: scale(1.05, 1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease;
 }
 
