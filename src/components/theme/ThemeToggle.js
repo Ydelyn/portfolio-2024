@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(6),
     height: "2.5rem",
     width: "2.5rem",
-    zIndex: 1000,    
+    zIndex: 1500,    
     backdropFilter: 'blur(10px)',
   },
   icon: {

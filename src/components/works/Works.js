@@ -72,7 +72,7 @@ export const Works = () => {
             </div>
             <div className="__content_wrapper">
               <h3 className="title">
-                <TextDecrypt text={project.id + '. ' + project.title} />
+                <TextDecrypt text={project.title} />
               </h3>
               <p className="description">
                 {t('works.'+project.description)}
