@@ -18,6 +18,9 @@ import { useTranslation } from "react-i18next";
 import { GrProjects } from "react-icons/gr";
 import { IoMdHome } from "react-icons/io";
 
+import Resume from '../../settings/resume.json';
+
+
 
 export const NavbarDrawer = () => {
     /*
@@ -42,14 +45,19 @@ export const NavbarDrawer = () => {
             right: theme.spacing(13),
             zIndex: 1000,
             backdropFilter: "blur(10px)",
+            borderRadius: "50%",
             [theme.breakpoints.down('md')]: {
                 display: "block",
             },
         },
         "drawer": {
-            backgroundColor: drawerColor,
-            padding: "15px 30px",
+            backgroundColor: "transparent",
+            backdropFilter: "blur(10px)",
+            padding: "15px 40px",
             height: "100vh",
+        },
+        "bgDrawer": {
+            backgroundColor: "transparent",
         },
         "icons": {
             color: "#884ac2",
@@ -75,6 +83,24 @@ export const NavbarDrawer = () => {
         setState(open);
     };
 
+    const socialItems = Resume.basics.profiles.map((socialItem) => (
+        <a href={socialItem.url}
+            key={socialItem.network.toLowerCase()}
+            target='_blank'
+            rel='noopener noreferrer'
+            underline='none'
+            onClick={toggleDrawer(false)}>
+            <ListItemButton>
+                <ListItemIcon>
+                    <i className={`${classes.icons} ${socialItem.x_icon}`}></i>
+                </ListItemIcon>
+                <Typography className={classes.text}>
+                    {socialItem.network}
+                </Typography>
+            </ListItemButton>
+        </a>
+    ));
+
     return (
         <nav className={classes.nav}>
             <IconButton
@@ -87,6 +113,11 @@ export const NavbarDrawer = () => {
 
             {/* The outside of the drawer */}
             <Drawer
+                PaperProps={{
+                    sx: {
+                        backgroundColor: "transparent",
+                    },
+                }}
                 //from which side the drawer slides in
                 anchor="right"
                 //if open is true --> drawer is shown
@@ -110,7 +141,7 @@ export const NavbarDrawer = () => {
                     <Divider sx={{ mb: 2 }} />
 
                     <Box sx={{ mb: 2 }}>
-                        <a href="#home" >
+                        <a href="#home" onClick={toggleDrawer(false)}>
                             <ListItemButton>
                                 <ListItemIcon>
                                     <IoMdHome className={classes.icons} />
@@ -120,7 +151,7 @@ export const NavbarDrawer = () => {
                                 </Typography>
                             </ListItemButton>
                         </a>
-                        <a href="#works" >
+                        <a href="#works" onClick={toggleDrawer(false)}>
                             <ListItemButton>
                                 <ListItemIcon>
                                     <GrProjects className={classes.icons} />
@@ -130,7 +161,7 @@ export const NavbarDrawer = () => {
                                 </Typography>
                             </ListItemButton>
                         </a>
-                        <a href="#about" >
+                        <a href="#about" onClick={toggleDrawer(false)}>
                             <ListItemButton>
                                 <ListItemIcon>
                                     <SiAboutdotme className={classes.icons} />
@@ -140,7 +171,7 @@ export const NavbarDrawer = () => {
                                 </Typography>
                             </ListItemButton>
                         </a>
-                        <a href="#contact" >
+                        <a href="#contact" onClick={toggleDrawer(false)}>
                             <ListItemButton>
                                 <ListItemIcon>
                                     <IoIosContact className={classes.icons} />
@@ -150,6 +181,10 @@ export const NavbarDrawer = () => {
                                 </Typography>
                             </ListItemButton>
                         </a>
+                    </Box>
+                    <Divider sx={{ mb: 2 }} />
+                    <Box sx={{ mb: 2 }}>
+                        {socialItems}
                     </Box>
                 </Box>
             </Drawer>
