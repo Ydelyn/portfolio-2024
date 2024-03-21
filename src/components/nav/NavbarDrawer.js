@@ -35,6 +35,7 @@ export const NavbarDrawer = () => {
 
     const drawerColor = theme === "light" ? "#eaeaea" : "#222222";
     const textColor = theme === "light" ? "#111111" : "#fafafa";
+    const drawerBg = theme === "light" ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.5)";
 
 
     const useStyles = makeStyles((theme) => ({
@@ -57,7 +58,7 @@ export const NavbarDrawer = () => {
             height: "100vh",
         },
         "bgDrawer": {
-            backgroundColor: "transparent",
+            backgroundColor: drawerBg,
         },
         "icons": {
             color: "#884ac2",
