@@ -32,8 +32,6 @@ export const NavbarDrawer = () => {
 
     const { t } = useTranslation("common");
 
-
-    const drawerColor = theme === "light" ? "#eaeaea" : "#222222";
     const textColor = theme === "light" ? "#111111" : "#fafafa";
     const drawerBg = theme === "light" ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.5)";
 
@@ -56,9 +54,6 @@ export const NavbarDrawer = () => {
             backdropFilter: "blur(10px)",
             padding: "15px 40px",
             height: "100vh",
-        },
-        "bgDrawer": {
-            backgroundColor: drawerBg,
         },
         "icons": {
             color: "#884ac2",
@@ -116,7 +111,7 @@ export const NavbarDrawer = () => {
             <Drawer
                 PaperProps={{
                     sx: {
-                        backgroundColor: "transparent",
+                        backgroundColor: drawerBg,
                     },
                 }}
                 //from which side the drawer slides in
