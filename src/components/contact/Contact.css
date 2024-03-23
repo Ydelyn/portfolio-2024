@@ -12,6 +12,7 @@
   width: 50%;
   height: 28em;
   padding: 2em;
+  backdrop-filter: blur(20px);
 }
 .submit-btn {
   margin-right: 20px;
