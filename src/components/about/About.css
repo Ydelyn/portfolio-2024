@@ -11,9 +11,12 @@
   height: 20em;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.51);
   background-size: contain;
+  background: rgba(132,74,194,0.2);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(132,74,194,0.3);
+  position: relative;
 }
 ._content_wrapper {
   width: 100%;

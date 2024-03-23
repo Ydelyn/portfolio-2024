@@ -31,13 +31,18 @@ export const About = () => {
       <Container component="main" className={classes.main} maxWidth="md">
         <div className="about">
           <div className="_img"
-            style={{ 
+            
+          >
+            <div style={{ 
               background: "url(" + profile + ")",
               backgroundSize: 'contain',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
-            }}
-          >
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+            }}>
+            </div>
           </div>
           <div className="_content_wrapper">
             <Typography component='h2' variant="h5">
