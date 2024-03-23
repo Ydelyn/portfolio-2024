@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Link, IconButton } from '@material-ui/core';
 import { TextDecrypt } from '../content/TextDecrypt';
-import ResumePDF from './../../assets/Lorris_Colini_Resume.pdf';
+import ResumePDFUK from './../../assets/Lorris_Colini_Resume_UK.pdf';
+import ResumePDFFR from './../../assets/Lorris_Colini_Resume_FR.pdf';
 import { FaRegFilePdf } from "react-icons/fa6";
 import {useTranslation} from "react-i18next";
 
@@ -31,13 +32,15 @@ const useStyles = makeStyles((theme) => ({
 
 export const Resume = () => {
   const classes = useStyles();
-  const {t} = useTranslation("common");
+  const {i18n, t} = useTranslation("common");
+  const currentLanguage = i18n.language;
+  const resume = currentLanguage === "en" ? ResumePDFUK : ResumePDFFR;
 
   return (
     <Link
       color='inherit'
       underline='none'
-      href= {`${ResumePDF}`}
+      href= {`${resume}`}
       target='_blank'
       rel='noopener noreferrer'
       className={classes.footerText}
