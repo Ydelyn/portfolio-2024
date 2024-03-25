@@ -12,6 +12,10 @@
         "summary": "based in Paris, France.",
         "keywords": "personal,website,portfolio,template,kit,lorris,colini,ydelyn,webdev,web,developer,paris,france,react,github,linkedin,google,gitlab",
         "url": "https://lycdev.tech/",
+        "location": {
+            "city": "Paris",
+            "country": "France"
+        },
         "profiles": [
             {
                 "network": "Google",
