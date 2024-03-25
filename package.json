@@ -64,6 +64,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "emailjs": "^4.0.0"
   }
 }
