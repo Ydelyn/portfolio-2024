@@ -62,6 +62,11 @@ export const NavbarDrawer = () => {
         "text": {
             color: textColor,
         },
+        "closeIcon": {
+            color: textColor,
+            boxShadow: "none",
+            marginLeft: "-23px",
+        },
     }));
 
     const classes = useStyles();
@@ -130,8 +135,8 @@ export const NavbarDrawer = () => {
                   when clicking the icon it calls the function toggleDrawer 
                   and closes the drawer by setting the variable open to false
                   */}
-                    <IconButton className={classes.text} sx={{ mb: 2 }}>
-                        <CloseIcon className={classes.text} onClick={toggleDrawer(false)} />
+                    <IconButton className={classes.closeIcon} sx={{ mb: 2 }}>
+                        <CloseIcon className={classes.closeIcon} onClick={toggleDrawer(false)} />
                     </IconButton>
 
                     <Divider sx={{ mb: 2 }} />
