@@ -1,6 +1,6 @@
 # <p align="center">TODO List :</p>
 
-- [X]  Adapter le responsive : 
+- [X] Adapter le responsive : 
 - [X] Social Links (Rendre le + fixed pour toujours l'avoir à dispo)
  ----------
 - [X] Buttons (Ajouter un blur / background sous les boutons)
