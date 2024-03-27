@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import IconButton from "@mui/material/IconButton";
+import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
@@ -135,8 +135,8 @@ export const NavbarDrawer = () => {
                   when clicking the icon it calls the function toggleDrawer 
                   and closes the drawer by setting the variable open to false
                   */}
-                    <IconButton className={classes.closeIcon} sx={{ mb: 2 }}>
-                        <CloseIcon className={classes.closeIcon} onClick={toggleDrawer(false)} />
+                    <IconButton className={classes.closeIcon}onClick={toggleDrawer(false)} sx={{ mb: 2 }}>
+                        <CloseIcon className={classes.closeIcon}  />
                     </IconButton>
 
                     <Divider sx={{ mb: 2 }} />
