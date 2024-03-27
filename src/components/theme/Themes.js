@@ -55,10 +55,11 @@ export const LightTheme = responsiveFontSizes(
       },
       MuiIconButton: {
         root: {
+          backgroundColor: 'rgba(132,74,194,0.2)',
           boxShadow:
             '0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)',
           '&:hover': {
-            backgroundColor: primary,
+            backgroundColor: 'rgba(132,74,194,0.7)',
           },
           transition: 'all 0.5s ease',
         },
@@ -71,10 +72,10 @@ export const LightTheme = responsiveFontSizes(
         },
         primary: {
           color: black,
-          backgroundColor: 'transparent',
+          backgroundColor: 'rgba(132,74,194,0.2)',
           '&:hover': {
             color: black,
-            backgroundColor: primary,
+            backgroundColor: 'rgba(132,74,194,0.7)',
           },
           transition: 'all 0.5s ease !important',
         },
@@ -82,10 +83,10 @@ export const LightTheme = responsiveFontSizes(
       MuiSpeedDialAction: {
         fab: {
           color: white,
-          backgroundColor: 'transparent',
+          backgroundColor: 'rgba(132,74,194,0.2)',
           '&:hover': {
             color: white,
-            backgroundColor: primary,
+            backgroundColor: 'rgba(132,74,194,0.7)',
           },
           transition: 'all 0.5s ease',
           margin: '0px',
@@ -95,7 +96,7 @@ export const LightTheme = responsiveFontSizes(
       MuiTooltip: {
         tooltip: {
           fontFamily: 'Roboto Mono, monospace',
-          backgroundColor: primary,
+          backgroundColor: 'rgba(132,74,194,0.7)',
           color: black,
           fontSize: 12,
         },
@@ -153,10 +154,11 @@ export const DarkTheme = responsiveFontSizes(
       },
       MuiIconButton: {
         root: {
+          backgroundColor: 'rgba(132,74,194,0.2)',
           boxShadow:
             '0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)',
           '&:hover': {
-            backgroundColor: primary,
+            backgroundColor: 'rgba(132,74,194,0.7)',
           },
           transition: 'all 0.5s ease',
         },
@@ -169,10 +171,10 @@ export const DarkTheme = responsiveFontSizes(
         },
         primary: {
           color: white,
-          backgroundColor: 'transparent',
+          backgroundColor: 'rgba(132,74,194,0.2)',
           '&:hover': {
             color: white,
-            backgroundColor: primary,
+            backgroundColor: 'rgba(132,74,194,0.7)',
           },
           transition: 'all 0.5s ease !important',
         },
@@ -180,10 +182,10 @@ export const DarkTheme = responsiveFontSizes(
       MuiSpeedDialAction: {
         fab: {
           color: white,
-          backgroundColor: 'transparent',
+          backgroundColor: 'rgba(132,74,194,0.2)',
           '&:hover': {
             color: white,
-            backgroundColor: primary,
+            backgroundColor: 'rgba(132,74,194,0.7)',
           },
           transition: 'all 0.5s ease',
           margin: '0px',
@@ -193,7 +195,7 @@ export const DarkTheme = responsiveFontSizes(
       MuiTooltip: {
         tooltip: {
           fontFamily: 'Roboto Mono, monospace',
-          backgroundColor: primary,
+          backgroundColor: 'rgba(132,74,194,0.7)',
           color: white,
           fontSize: 12,
         },

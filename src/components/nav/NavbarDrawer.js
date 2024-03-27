@@ -62,10 +62,19 @@ export const NavbarDrawer = () => {
         "text": {
             color: textColor,
         },
+        "menuIcon": {
+            backgroundColor: 'rgba(132,74,194,0.2) !important',
+            '&:hover': {
+                backgroundColor: 'rgba(132,74,194,0.7) !important',
+            },
+        },
         "closeIcon": {
             color: textColor,
             boxShadow: "none",
             marginLeft: "-23px",
+            '&:hover': {
+                backgroundColor: "transparent !important",
+            },
         },
     }));
 
@@ -105,6 +114,7 @@ export const NavbarDrawer = () => {
     return (
         <nav className={classes.nav}>
             <IconButton
+                className={classes.menuIcon}
                 color="inherit"
                 aria-label="open drawer"
                 onClick={toggleDrawer(true)}

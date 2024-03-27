@@ -8,7 +8,6 @@
   display: flex;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  background: rgba(132,74,194,0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(132,74,194,0.3);
@@ -19,19 +18,25 @@
 .submit-btn {
   margin-right: 20px;
   text-decoration: none;
-  color: #ffff;
-  background-color: #44a1a0;
+  color: inherit;
+  background-color: rgba(132,74,194,0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(132,74,194,0.7);
   padding: 10px;
   border-radius: 10px;
 }
 .submit-btn:hover {
   margin-right: 20px;
   text-decoration: none;
-  background-color: #884ac2;
+  background-color: rgba(132,74,194,0.8);
   animation: zoom-in-zoom-out 1s ease;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.005, 1.005);
   transition: all 0.5s ease;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 .submit-btn:not(:hover){
   transition: all 0.5s ease;
