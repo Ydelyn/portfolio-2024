@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Box from "@mui/material/Box";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 //drawer elements used
 import Drawer from "@mui/material/Drawer";
@@ -12,7 +12,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import { IoIosContact } from "react-icons/io";
 import { SiAboutdotme } from "react-icons/si";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import { ThemeContext } from "../theme/ThemeProvider";
 import { useTranslation } from "react-i18next";
 import { GrProjects } from "react-icons/gr";

@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 import {useTranslation} from "react-i18next";
 
 export const SideNavbar = () => {

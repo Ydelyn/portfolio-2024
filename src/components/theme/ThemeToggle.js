@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
-import { Tooltip, IconButton, Zoom } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Tooltip, IconButton, Zoom } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 

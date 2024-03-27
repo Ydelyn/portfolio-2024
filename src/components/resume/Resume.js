@@ -1,6 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Link, IconButton } from '@material-ui/core';
+import { makeStyles } from '@mui/styles';
+import { Typography, Link, IconButton } from '@mui/material';
 import { TextDecrypt } from '../content/TextDecrypt';
 import ResumePDFUK from './../../assets/Lorris_Colini_Resume_UK.pdf';
 import ResumePDFFR from './../../assets/Lorris_Colini_Resume_FR.pdf';

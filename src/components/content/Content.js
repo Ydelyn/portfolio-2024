@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography, Container } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Container } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import { TextDecrypt } from "./TextDecrypt";
 import { FaAnglesDown } from "react-icons/fa6";
 import { FirstName, Pseudo, LastName } from "../../utils/getName";

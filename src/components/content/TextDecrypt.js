@@ -65,7 +65,7 @@ const decryptOptions = {
 };
 
 export const TextDecrypt = (props) => {
-    const { result, dencrypt } = useDencrypt(decryptOptions);
+    const [result, dencrypt] = useDencrypt(decryptOptions);
 
     useEffect(() => {
         const updateText = () => {

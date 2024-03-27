@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Tooltip, Zoom } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Link, Tooltip, Zoom } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 import Resume from "../../settings/resume.json";
 import { Logo } from "./Logo";
 

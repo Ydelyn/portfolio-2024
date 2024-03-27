@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Tooltip, IconButton, Zoom } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Tooltip, IconButton, Zoom } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 import { useTranslation } from "react-i18next";
 

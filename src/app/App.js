@@ -2,8 +2,8 @@ import React, { lazy } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HelmetMeta } from "./HelmetMeta";
-import { ThemeProvider } from "../components/theme/ThemeProvider";
-import { CssBaseline } from "@material-ui/core";
+import { Theme } from "../components/theme/ThemeProvider";
+import { CssBaseline } from "@mui/material";
 import { logCredits } from "../utils/logCredits";
 
 import { Home } from "../pages/Home";
@@ -15,7 +15,7 @@ export const App = () => {
     logCredits();
 
     return (
-      <ThemeProvider>
+      <Theme>
         <CssBaseline />
         <Router>
           <HelmetMeta />
@@ -25,6 +25,6 @@ export const App = () => {
               <Route path="*" component={PageNotFound} />
           </Switch>
         </Router>
-      </ThemeProvider>
+      </Theme>
     );
 };
