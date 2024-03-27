@@ -27,7 +27,7 @@ export const SideNavbar = () => {
       marginLeft: "10px",
       textDecoration: "none",
       "& :hover": {
-        color: "#44a1a0",
+        color: "rgba(132,74,194,0.7)",
       },
     },
     "active": {

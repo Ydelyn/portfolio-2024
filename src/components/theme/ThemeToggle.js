@@ -20,6 +20,10 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     fontSize: "1.25rem",
   },
+  tooltip: {
+    backdropFilter: "blur(10px)",
+    backgroundColor: 'rgba(132,74,194,0.2)',
+    },
 }));
 
 export const ThemeToggle = () => {
@@ -32,6 +36,7 @@ export const ThemeToggle = () => {
       title={t('theme_toggle.aria_label')}
       placement="right"
       TransitionComponent={Zoom}
+      classes={classes.tooltip}
     >
       <IconButton
         color="inherit"
