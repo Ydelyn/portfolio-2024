@@ -1,5 +1,6 @@
 import React from "react";
-import { render } from "react-snapshot";
+// import renderer from "react-test-renderer";
+import ReactDOM from "react-dom";
 import { App } from "./app/App";
 import "./index.css";
 
@@ -22,4 +23,11 @@ i18next.init({
     },
 });
 
-render(<I18nextProvider i18n={i18next}><App /></I18nextProvider>, document.getElementById("root"));
+// it('renders correctly', () => {
+//     const tree = renderer
+//       .create(<I18nextProvider i18n={i18next}><App /></I18nextProvider>, document.getElementById("root"))
+//       .toJSON();
+//     expect(tree).toMatchSnapshot();
+//   });
+
+ReactDOM.render(<I18nextProvider i18n={i18next}><App /></I18nextProvider>, document.getElementById("root"));
