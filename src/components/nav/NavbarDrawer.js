@@ -164,8 +164,6 @@ export const NavbarDrawer = () => {
                 open={open}
                 //function that is called when the drawer should close
                 onClose={toggleDrawer(false)}
-                //function that is called when the drawer should open
-                onOpen={toggleDrawer(true)}
             >
                 {/* The inside of the drawer */}
                 <Box className={classes.drawer}>
@@ -180,8 +178,9 @@ export const NavbarDrawer = () => {
                         style={isHoveredClose ? { ...baseStyleClose, ...hoverStyleClose } : baseStyleClose}
                         onMouseEnter={handleMouseEnterClose}
                         onMouseLeave={handleMouseLeaveClose}
+                        onClick={toggleDrawer(false)} 
                     >
-                        <CloseIcon className={classes.closeIcon} onClick={toggleDrawer(false)} />
+                        <CloseIcon className={classes.closeIcon} />
                     </IconButton>
 
                     <Divider sx={{ mb: 2 }} />
