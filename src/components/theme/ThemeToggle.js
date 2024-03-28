@@ -36,7 +36,7 @@ export const ThemeToggle = () => {
       title={t('theme_toggle.aria_label')}
       placement="right"
       TransitionComponent={Zoom}
-      classes={classes.tooltip}
+      className={classes.tooltip}
     >
       <IconButton
         color="inherit"
