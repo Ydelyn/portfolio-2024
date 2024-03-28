@@ -28,12 +28,48 @@ export const NavbarDrawer = () => {
     normally variables dissapear afte the function was executed
     */
     const [open, setState] = useState(false);
+    const [isHoveredMenu, setIsHoveredMenu] = useState(false);
+    const [isHoveredClose, setIsHoveredClose] = useState(false);
+
+    const handleMouseEnterMenu = () => {
+        setIsHoveredMenu(true);
+    };
+
+    const handleMouseLeaveMenu = () => {
+        setIsHoveredMenu(false);
+    };
+
+    const handleMouseEnterClose = () => {
+        setIsHoveredClose(true);
+    };
+
+    const handleMouseLeaveClose = () => {
+        setIsHoveredClose(false);
+    };
+
     const { theme } = useContext(ThemeContext);
 
     const { t } = useTranslation("common");
 
     const textColor = theme === "light" ? "#111111" : "#fafafa";
     const drawerBg = theme === "light" ? "rgba(255,255,255,0.5)" : "rgba(0,0,0,0.5)";
+
+    const baseStyleMenu = {
+        backgroundColor: 'rgba(132,74,194,0.2)',
+    };
+
+    const hoverStyleMenu = {
+        backgroundColor: 'rgba(132,74,194,0.7)',
+    };
+
+    //TODO: refactor this some day
+    const baseStyleClose = {
+        backgroundColor: 'transparent',
+    };
+
+    const hoverStyleClose = {
+        backgroundColor: 'transparent',
+    };
 
 
     const useStyles = makeStyles((theme) => ({
@@ -62,19 +98,10 @@ export const NavbarDrawer = () => {
         "text": {
             color: textColor,
         },
-        "menuIcon": {
-            backgroundColor: 'rgba(132,74,194,0.2) !important',
-            '&:hover': {
-                backgroundColor: 'rgba(132,74,194,0.7) !important',
-            },
-        },
         "closeIcon": {
             color: textColor,
             boxShadow: "none",
             marginLeft: "-23px",
-            '&:hover': {
-                backgroundColor: "transparent !important",
-            },
         },
     }));
 
@@ -114,7 +141,9 @@ export const NavbarDrawer = () => {
     return (
         <nav className={classes.nav}>
             <IconButton
-                className={classes.menuIcon}
+                style={isHoveredMenu ? { ...baseStyleMenu, ...hoverStyleMenu } : baseStyleMenu}
+                onMouseEnter={handleMouseEnterMenu}
+                onMouseLeave={handleMouseLeaveMenu}
                 color="inherit"
                 aria-label="open drawer"
                 onClick={toggleDrawer(true)}
@@ -145,7 +174,13 @@ export const NavbarDrawer = () => {
                   when clicking the icon it calls the function toggleDrawer 
                   and closes the drawer by setting the variable open to false
                   */}
-                    <IconButton className={classes.closeIcon} sx={{ mb: 2 }}>
+                    <IconButton 
+                        className={classes.closeIcon} 
+                        sx={{ mb: 2 }}
+                        style={isHoveredClose ? { ...baseStyleClose, ...hoverStyleClose } : baseStyleClose}
+                        onMouseEnter={handleMouseEnterClose}
+                        onMouseLeave={handleMouseLeaveClose}
+                    >
                         <CloseIcon className={classes.closeIcon} onClick={toggleDrawer(false)} />
                     </IconButton>
 
