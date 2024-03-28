@@ -6,6 +6,8 @@ Bienvenue dans mon portfolio de 2024 ! Ce référentiel contient une collection 
 
 Ce portfolio est une vitrine de mes compétences en développement, design et autres domaines connexes. Il comprend une variété de projets, allant de petits exercices de codage à des applications plus importantes.
 
+![Vue du site lycdev.tech](public/social-image.png)
+
 ## Contenu
 
 - **Projets:** Une liste de mes projets récents avec des descriptions détaillées et des liens vers les projets correspondants.
