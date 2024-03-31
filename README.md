@@ -12,7 +12,7 @@ Ce portfolio est une vitrine de mes compétences en développement, design et au
 
 - **Projets:** Une liste de mes projets récents avec des descriptions détaillées et des liens vers les projets correspondants.
   
-- **Présentation:** Une rapide présentation de moi-même et mes appétences.
+- **Présentation:** Une rapide présentation de moi-même ainsi que mes appétences.
 
 - **Contact:** Un formulaire de contact disponible, ainsi que mon CV.
 
